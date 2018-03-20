@@ -1,49 +1,109 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Activity 1: Cyrus's HTML Bio</title>
+    <meta charset="UTF-8">
+    <title>Latitude</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' type ="text/css" href='https://fonts.googleapis.com/css?family=Arimo' >
 </head>
+
 <body>
-	<h1>P. Cyrus Bakhshi</h1>
-	<img src="http://lorempixel.com/400/200" alt="Cyrus At His Prime" />
-	<p>Lorem ipsum dolor amet butcher tbh scenester pickled, everyday carry authentic echo park banjo cred umami tacos. Edison bulb aesthetic vape waistcoat kickstarter tbh asymmetrical slow-carb, freegan tacos lumbersexual cliche bicycle rights letterpress. Waistcoat cray stumptown, leggings cliche hammock authentic. Chambray vaporware waistcoat messenger bag whatever post-ironic. Fanny pack microdosing messenger bag cliche woke heirloom. Bespoke chambray marfa tumeric cardigan. Bicycle rights whatever etsy raw denim humblebrag.
-	</p>
-	<p>Tote bag fashion axe meggings locavore. Plaid wolf hoodie meditation. Seitan sartorial brooklyn yr, microdosing scenester snackwave. Art party wayfarers you probably haven't heard of them tousled ethical. Skateboard bespoke enamel pin snackwave, jianbing coloring book tattooed tote bag cronut franzen knausgaard hella vape ramps readymade. Poke blog chia fashion axe pitchfork.
-	</p>
-	<ul style="list-style-type:disc">
-	<li><strong>Email:</strong> <a href="#">peyk.bakhshi@gmail.com</a></li>
-  	<li><strong>Instagram:</strong></li> <a target="_blank" href="https://www.instagram.com/cyrusbakhshi">cyrusbakhshi</a></li>
-  	<li><strong>LinkedIn:</strong></li> <a target="_blank" href="https://www.linkedin.com/in/peykcbakhshi/">peykcbakhshi</a></li>
-	</ul>
-	<table>
-		<thead>
-			<tr>
-				<th colspan="3"> More Fun Facts</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-		      <th>Books</th>
-		      <th>Movies</th>
-		      <th>Games</th>
-		    </tr>
-		    <tr>
-		      <td>The Hobbit</td>
-		      <td>Hot Fuzz</td>
-		      <td>Dark Souls</td>
-		    </tr>
-		    <tr>
-		      <td>The Name of the Wind</td>
-		      <td>The Avengers</td>
-		      <td>The Last of Us</td>
-		    </tr>
-		    <tr>
-		      <td>The Girl With All the Gifts</td>
-		      <td>The Matrix</td>
-		      <td>Dragon Age: Origins</td>
-		    </tr>
-		</tbody>
-	</table>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand mb-0" href="index.html" id = 'title-text'>Latitude</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plots<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="temp.html">Latitude vs Temperature</a></li>
+                        <li><a href="humidity.html">Latitude vs Humidity</a></li>
+                        <li><a href="cloudiness.html">Latitude vs Cloudiness</a></li>
+                        <li><a href="wind.html">Latitude vs Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    
+    <div class="container">
+        
+        <div class="col-sm-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading" id = 'lat-sum-header'>
+                    <h3 class="panel-title" id = 'lat-sum'>Summary: Latitude vs X </h3>
+                </div>
+                <div class="panel-body">
+                    
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" id = "summary-pic" src="output_data/Fig1.png" alt="Image" >
+                        </a>
+                        <div class="media-body">
+                            <p>This project analyzed the weather for multiple cities and looked for trends related to changes in weather as you near the equator. One would expect the weather to be warmer and with more rain as you near the equator.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+        
+        </div>
+        
+        
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading" id = 'vis-text-header'>
+                    <h3 class="panel-title" id = 'vis-text'>Visualizations</h3>
+                </div>
+                <div class="panel-body">
+                    
+                    <a href = 'temp.html'><img class="img-responsive" id = "img-fig-1" src="output_data/Fig1.png" alt="Image"></a>
+
+                    <a href="humidity.html"><img class="img-responsive" id = "img-fig-2" src="output_data/Fig2.png" alt="Image"></a>
+                    
+                    <a href="cloudiness.html"><img class="img-responsive" id = "img-fig-3" src="output_data/Fig3.png" alt="Image"></a>
+
+                    <a href="wind.html"><img class="img-responsive" id = "img-fig-4" src="output_data/Fig4.png" alt="Image"></a>
+                    
+                </div>
+                
+
+            </div>
+        
+        </div>
+    </div>
+    
+
+    
+    <div class="footer navbar-bottom" id = 'footer'>
+        <h3 class="text-center" id = 'footer-text'>By: Cyrus Bakhshi</h3>
+        
+    </div>
+    
+
+
+
+
+
+
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </html>
